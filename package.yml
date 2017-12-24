@@ -1,0 +1,18 @@
+name       : kicad-library
+version    : 4.0.7
+release    : 1
+source     :
+    - https://github.com/KiCad/kicad-library/archive/4.0.7.tar.gz : 2a6e1e686280346c9bcd938d218546413497b660b53682d4e87e25c3171ce3e6
+license    : GPL-2.0
+component  : office.scientific
+summary    : The schematic and 3D libraries supported by KiCad team. 
+description: |
+    The schematic and 3D libraries supported by KiCad team.
+builddeps  :
+    - gcc
+setup      : |
+    %cmake .
+build      : |
+    %make
+install    : |
+    %make_install
